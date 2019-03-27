@@ -8,6 +8,7 @@ up:
 	git push heroku master; \
 	heroku open
 down:
-	heroku apps:destroy
+	cd todo-app; heroku apps:destroy
 
 status:
+	cd todo-app; heroku logs
